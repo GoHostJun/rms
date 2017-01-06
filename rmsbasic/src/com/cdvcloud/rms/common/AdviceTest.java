@@ -45,7 +45,7 @@ public class AdviceTest {
 //	    }
 	 	@AfterThrowing(pointcut="execution(* com.cdvcloud.rms..*.*(..))",throwing = "e")  
 	    public void doAfterThrow(JoinPoint point,Throwable e){  
-	        System.out.println("例外通知");  
+	        System.out.println("例外通知2");  
 	        System.out.println(e.getMessage());
 	    }      
 	
@@ -63,7 +63,7 @@ public class AdviceTest {
 	        returning="returnValue")
 	    public void log(JoinPoint point, Object returnValue) {
 	        System.out.println("@AfterReturning：模拟日志记录功能...");
-	        System.out.println("@AfterReturning：目标方法为：" + 
+	        System.out.println("@AfterReturning：目标方法为2：" + 
 	                point.getSignature().getDeclaringTypeName() + 
 	                "." + point.getSignature().getName());
 //	        System.out.println("@AfterReturning：参数为：" + 
