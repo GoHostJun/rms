@@ -62,7 +62,7 @@ public class AdviceTest {
 	    @AfterReturning(pointcut="execution(* com.cdvcloud.rms.web.api.*.*(..))", 
 	        returning="returnValue")
 	    public void log(JoinPoint point, Object returnValue) {
-	        System.out.println("@AfterReturning：模拟日志记录功能...");
+	        System.out.println("@AfterReturning：模拟日志记录功能2...");
 	        System.out.println("@AfterReturning：目标方法为：" + 
 	                point.getSignature().getDeclaringTypeName() + 
 	                "." + point.getSignature().getName());
